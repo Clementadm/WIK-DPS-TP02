@@ -13,5 +13,5 @@ Afin de lancer le second dockerfile (dockerfile2.dockerfile)
 ```
 cd /app
 docker build -f Dockerfile2.Dockerfile -t devopstp2v2 .
-docker run -p  8080:3000 devopstp2v2
+docker run -p  8080:3000 --user=appuser devopstp2v2
 ```
